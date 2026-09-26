@@ -12,12 +12,9 @@
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
-    "gray-matter": "^4.0.3",
     "next": "16.3.2",
     "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1"
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
