@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { NavItem, Profile } from '@/types';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/i18n/types';
-import { LangSwitcher } from '@/components/basic/lang-switcher';
+import { LangSwitcher } from '@/components/common/lang-switcher';
 import { useActiveSection } from '@/hooks/useActiveSection';
 
 type HeaderProps = {

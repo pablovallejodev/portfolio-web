@@ -1,8 +1,8 @@
 import type { Experience as ExperienceType } from '@/types';
 import type { Dictionary } from '@/i18n/types';
-import { Section } from '@/components/ui/Section';
-import { ExperienceCard } from '@/components/ui/ExperienceCard';
-import { Reveal } from '@/components/ui/Reveal';
+import { Section } from '@/components/common/ui/Section';
+import { ExperienceCard } from '@/components/common/ui/ExperienceCard';
+import { Reveal } from '@/components/common/ui/Reveal';
 
 export function Experience({ experiences, copy }: { experiences: ExperienceType[]; copy: Dictionary['experience'] }) {
   return (

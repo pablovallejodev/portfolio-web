@@ -1,6 +1,6 @@
-import { Section } from '@/components/ui/Section';
-import { Reveal } from '@/components/ui/Reveal';
-import { TerminalSsh } from '@/components/ui/TerminalSsh';
+import { Section } from '@/components/common/ui/Section';
+import { Reveal } from '@/components/common/ui/Reveal';
+import { TerminalSsh } from '@/components/common/ui/TerminalSsh';
 import type { Dictionary } from '@/i18n/types';
 
 export function Terminal({ copy }: { copy: Dictionary['terminal'] }) {

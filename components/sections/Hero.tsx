@@ -2,9 +2,9 @@ import Image from 'next/image';
 import type { Profile } from '@/types';
 import type { Dictionary } from '@/i18n/types';
 import type { Locale } from '@/i18n/config';
-import { Icon } from '@/components/ui/Icon';
-import { CompactIconLink } from '@/components/ui/SocialLinks';
-import { Reveal } from '@/components/ui/Reveal';
+import { Icon } from '@/components/common/ui/Icon';
+import { CompactIconLink } from '@/components/common/ui/SocialLinks';
+import { Reveal } from '@/components/common/ui/Reveal';
 
 const highlightIcons = ['stack', 'pulse', 'spark', 'passport'] as const;
 

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import type { Profile } from '@/types';
 import type { Dictionary } from '@/i18n/types';
-import { Section } from '@/components/ui/Section';
-import { Icon } from '@/components/ui/Icon';
-import { Reveal } from '@/components/ui/Reveal';
-import { CopyEmail } from '@/components/ui/CopyEmail';
-import { CompactIconLink } from '@/components/ui/SocialLinks';
+import { Section } from '@/components/common/ui/Section';
+import { Icon } from '@/components/common/ui/Icon';
+import { Reveal } from '@/components/common/ui/Reveal';
+import { CopyEmail } from '@/components/common/ui/CopyEmail';
+import { CompactIconLink } from '@/components/common/ui/SocialLinks';
 
 const ACTION_ORDER = ['linkedin', 'github'] as const;
 

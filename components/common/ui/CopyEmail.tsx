@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Icon } from '@/components/ui/Icon';
+import { Icon } from '@/components/common/ui/Icon';
 import type { Dictionary } from '@/i18n/types';
 
 type CopyEmailProps = {

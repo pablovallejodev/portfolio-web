@@ -1,7 +1,7 @@
 import type { Profile } from '@/types';
 import type { Dictionary } from '@/i18n/types';
-import { Section } from '@/components/ui/Section';
-import { Reveal } from '@/components/ui/Reveal';
+import { Section } from '@/components/common/ui/Section';
+import { Reveal } from '@/components/common/ui/Reveal';
 
 export function About({ profile, copy }: { profile: Profile; copy: Dictionary['about'] }) {
   return (

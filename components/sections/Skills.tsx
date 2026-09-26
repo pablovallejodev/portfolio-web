@@ -1,8 +1,8 @@
 import type { SkillGroup } from '@/types';
 import type { Dictionary } from '@/i18n/types';
-import { Section } from '@/components/ui/Section';
-import { SkillCard } from '@/components/ui/SkillCard';
-import { Reveal } from '@/components/ui/Reveal';
+import { Section } from '@/components/common/ui/Section';
+import { SkillCard } from '@/components/common/ui/SkillCard';
+import { Reveal } from '@/components/common/ui/Reveal';
 
 export function Skills({ skillGroups, copy }: { skillGroups: SkillGroup[]; copy: Dictionary['skills'] }) {
   return (

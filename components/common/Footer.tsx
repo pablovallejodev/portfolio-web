@@ -2,7 +2,7 @@ import type { NavItem, Profile } from '@/types';
 import type { Locale } from '@/i18n/config';
 import type { Dictionary } from '@/i18n/types';
 import { projectRepoUrl } from '@/constants/profile';
-import { LangSwitcher } from '@/components/basic/lang-switcher';
+import { LangSwitcher } from '@/components/common/lang-switcher';
 
 type FooterProps = {
   lang: Locale;

@@ -1,8 +1,8 @@
 import type { Language } from '@/types';
 import type { Dictionary } from '@/i18n/types';
-import { Section } from '@/components/ui/Section';
-import { LanguageItem } from '@/components/ui/LanguageItem';
-import { Reveal } from '@/components/ui/Reveal';
+import { Section } from '@/components/common/ui/Section';
+import { LanguageItem } from '@/components/common/ui/LanguageItem';
+import { Reveal } from '@/components/common/ui/Reveal';
 
 export function Languages({ languages, copy }: { languages: Language[]; copy: Dictionary['languages'] }) {
   return (

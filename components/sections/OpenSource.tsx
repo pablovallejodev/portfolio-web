@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import githubMark from '@/public/github.png';
 import { projectRepoUrl } from '@/constants/profile';
-import { Section } from '@/components/ui/Section';
-import { Icon } from '@/components/ui/Icon';
-import { Reveal } from '@/components/ui/Reveal';
+import { Section } from '@/components/common/ui/Section';
+import { Icon } from '@/components/common/ui/Icon';
+import { Reveal } from '@/components/common/ui/Reveal';
 import type { Dictionary } from '@/i18n/types';
 
 export function OpenSource({ copy }: { copy: Dictionary['source'] }) {

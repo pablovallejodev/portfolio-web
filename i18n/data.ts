@@ -2,11 +2,11 @@ import { experiences } from '@/constants/experience';
 import { languages } from '@/constants/languages';
 import { skillGroups } from '@/constants/skills';
 import { profile } from '@/constants/profile';
-import { getDictionary } from '@/i18n/dictionary';
+import { copyCv } from '@/i18n/cv';
 import type { Locale } from '@/i18n/config';
 
 export function getLocalizedProfile(locale: Locale) {
-  const copy = getDictionary(locale).profile;
+  const copy = copyCv[locale].profile;
   return {
     ...profile,
     headline: copy.headline,
@@ -26,7 +26,7 @@ export function getLocalizedProfile(locale: Locale) {
 }
 
 export function getLocalizedExperiences(locale: Locale) {
-  const copy = getDictionary(locale).experience.data;
+  const copy = copyCv[locale].experience.data;
   return experiences.map((experience) => ({
     ...experience,
     ...(copy[experience.id] ?? {}),
@@ -34,7 +34,7 @@ export function getLocalizedExperiences(locale: Locale) {
 }
 
 export function getLocalizedSkills(locale: Locale) {
-  const copy = getDictionary(locale).skills.data;
+  const copy = copyCv[locale].skills.data;
   return skillGroups.map((group) => ({
     ...group,
     title: copy[group.id] ?? group.title,
@@ -42,7 +42,7 @@ export function getLocalizedSkills(locale: Locale) {
 }
 
 export function getLocalizedLanguages(locale: Locale) {
-  const copy = getDictionary(locale).languages.data;
+  const copy = copyCv[locale].languages.data;
   return languages.map((language) => ({
     ...language,
     ...(copy[language.language] ?? {}),
