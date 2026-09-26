@@ -1,18 +1,14 @@
-import Image from "next/image";
-import githubMark from "@/public/github.png";
-import { projectRepoUrl } from "@/constants/profile";
-import { Section } from "@/components/ui/Section";
-import { Icon } from "@/components/ui/Icon";
-import { Reveal } from "@/components/ui/Reveal";
+import Image from 'next/image';
+import githubMark from '@/public/github.png';
+import { projectRepoUrl } from '@/constants/profile';
+import { Section } from '@/components/ui/Section';
+import { Icon } from '@/components/ui/Icon';
+import { Reveal } from '@/components/ui/Reveal';
+import type { Dictionary } from '@/i18n/types';
 
-export function OpenSource() {
+export function OpenSource({ copy }: { copy: Dictionary['source'] }) {
   return (
-    <Section
-      id="source"
-      eyebrow="08 · Source"
-      title="This site ships with the source."
-      description="The portfolio is public. Inspect the stack, the structure, and how the pieces fit — then fork it if it helps."
-    >
+    <Section id="source" eyebrow={copy.eyebrow} title={copy.title} description={copy.description}>
       <Reveal direction="scale">
         <div className="mx-auto w-full max-w-xl">
           <a
@@ -42,19 +38,11 @@ export function OpenSource() {
               aria-hidden
               className="relative inline-flex size-12 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] ring-1 ring-teal/20 md:size-14"
             >
-              <Image
-                src={githubMark}
-                alt=""
-                width={32}
-                height={32}
-                className="size-7 md:size-8"
-              />
+              <Image src={githubMark} alt="" width={32} height={32} className="size-7 md:size-8" />
             </span>
 
             <span className="relative min-w-0 flex-1">
-              <span className="block text-[15px] font-semibold text-white md:text-base">
-                View on GitHub
-              </span>
+              <span className="block text-[15px] font-semibold text-white md:text-base">{copy.viewOnGithub}</span>
               <span className="mt-0.5 block truncate font-mono text-xs text-teal/90 md:text-sm">
                 pablovallejodev/porfolio-web
               </span>

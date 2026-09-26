@@ -1,18 +1,14 @@
-import { Section } from "@/components/ui/Section";
-import { Reveal } from "@/components/ui/Reveal";
-import { TerminalSsh } from "@/components/ui/TerminalSsh";
+import { Section } from '@/components/ui/Section';
+import { Reveal } from '@/components/ui/Reveal';
+import { TerminalSsh } from '@/components/ui/TerminalSsh';
+import type { Dictionary } from '@/i18n/types';
 
-export function Terminal() {
+export function Terminal({ copy }: { copy: Dictionary['terminal'] }) {
   return (
-    <Section
-      id="terminal"
-      eyebrow="06 · Terminal"
-      title="Meet me in the shell."
-      description="Prefer a CLI over a form? Copy the command, paste it in your terminal, and drop into an interactive session — backends talking to backends."
-    >
+    <Section id="terminal" eyebrow={copy.eyebrow} title={copy.title} description={copy.description}>
       <Reveal direction="scale">
         <div className="mx-auto w-full max-w-xl">
-          <TerminalSsh />
+          <TerminalSsh labels={copy} />
         </div>
       </Reveal>
     </Section>

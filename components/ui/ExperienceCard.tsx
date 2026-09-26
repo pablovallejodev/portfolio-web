@@ -1,24 +1,14 @@
-import type { Experience } from "@/types";
-import { Tag } from "./Tag";
-import { Icon } from "./Icon";
+import type { Experience } from '@/types';
+import { Tag } from './Tag';
+import { Icon } from './Icon';
 
 type ExperienceCardProps = {
   experience: Experience;
+  activeLabel: string;
 };
 
-export function ExperienceCard({ experience }: ExperienceCardProps) {
-  const {
-    company,
-    companyUrl,
-    role,
-    location,
-    start,
-    end,
-    current,
-    description,
-    bullets,
-    tags,
-  } = experience;
+export function ExperienceCard({ experience, activeLabel }: ExperienceCardProps) {
+  const { company, companyUrl, role, location, start, end, current, description, bullets, tags } = experience;
 
   return (
     <article className="group relative overflow-hidden rounded-[20px] border border-border bg-surface p-6 transition-all duration-300 hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-soft md:p-8">
@@ -33,9 +23,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
 
       <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between">
         <div>
-          <h3 className="font-serif text-lg text-text-strong md:text-xl">
-            {role}
-          </h3>
+          <h3 className="font-serif text-lg text-text-strong md:text-xl">{role}</h3>
           <p className="mt-1 text-sm text-text">
             {companyUrl ? (
               <a
@@ -60,7 +48,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                 <span className="absolute inset-0 inline-flex rounded-full bg-teal animate-pulse-ring" />
                 <span className="relative inline-flex size-1.5 rounded-full bg-teal" />
               </span>
-              Active
+              {activeLabel}
             </span>
           ) : null}
           <p className="font-mono text-xs uppercase tracking-wider text-text-muted">
@@ -69,20 +57,12 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         </div>
       </div>
 
-      <p className="mt-5 text-sm leading-relaxed text-text md:text-[15px]">
-        {description}
-      </p>
+      <p className="mt-5 text-sm leading-relaxed text-text md:text-[15px]">{description}</p>
 
       <ul className="mt-5 space-y-2.5">
         {bullets.map((bullet) => (
-          <li
-            key={bullet}
-            className="flex gap-3 text-sm leading-relaxed text-text md:text-[15px]"
-          >
-            <span
-              aria-hidden
-              className="mt-2 size-1.5 shrink-0 rounded-full bg-teal"
-            />
+          <li key={bullet} className="flex gap-3 text-sm leading-relaxed text-text md:text-[15px]">
+            <span aria-hidden className="mt-2 size-1.5 shrink-0 rounded-full bg-teal" />
             <span>{bullet}</span>
           </li>
         ))}

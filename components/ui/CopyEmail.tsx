@@ -1,17 +1,19 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { Icon } from "@/components/ui/Icon";
+import { useState } from 'react';
+import { Icon } from '@/components/ui/Icon';
+import type { Dictionary } from '@/i18n/types';
 
 type CopyEmailProps = {
   email: string;
+  labels: Dictionary['aria'];
 };
 
-export function CopyEmail({ email }: CopyEmailProps) {
+export function CopyEmail({ email, labels }: CopyEmailProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    if (typeof navigator === "undefined" || !navigator.clipboard) return;
+    if (typeof navigator === 'undefined' || !navigator.clipboard) return;
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
@@ -25,14 +27,14 @@ export function CopyEmail({ email }: CopyEmailProps) {
     <button
       type="button"
       onClick={handleCopy}
-      aria-label={copied ? "Email copied" : "Copy email address"}
+      aria-label={copied ? labels.emailCopied : labels.copyEmail}
       className="group/email inline-flex cursor-pointer items-center gap-3 text-left transition-opacity hover:opacity-90"
     >
       <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-teal/20 text-teal transition-colors group-hover/email:bg-teal/30">
         <Icon name="email" size={18} />
       </span>
       <span className="text-lg font-semibold text-white md:text-xl" aria-live="polite">
-        {copied ? "Copied!" : email}
+        {copied ? labels.copied : email}
       </span>
     </button>
   );

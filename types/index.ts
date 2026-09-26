@@ -5,14 +5,7 @@ export type SocialLink = {
   icon: SocialIcon;
 };
 
-export type SocialIcon =
-  | "email"
-  | "phone"
-  | "linkedin"
-  | "github"
-  | "location"
-  | "passport"
-  | "website";
+export type SocialIcon = 'email' | 'phone' | 'linkedin' | 'github' | 'location' | 'passport' | 'website';
 
 export type Profile = {
   name: string;
@@ -50,9 +43,9 @@ export type SkillGroup = {
   keywords: string[];
 };
 
-export type SkillIcon = "stack" | "pulse" | "database" | "cloud" | "spark";
+export type SkillIcon = 'stack' | 'pulse' | 'database' | 'cloud' | 'spark';
 
-export type LanguageLevel = "native" | "fluent" | "professional" | "beginner";
+export type LanguageLevel = 'native' | 'fluent' | 'professional' | 'beginner';
 
 export type Language = {
   language: string;
@@ -63,16 +56,4 @@ export type Language = {
 export type NavItem = {
   id: string;
   label: string;
-};
-
-export type BlogPost = {
-  slug: string;
-  title: string;
-  excerpt: string;
-  publishedAt: string;
-  readTime: string;
-};
-
-export type BlogPostWithContent = BlogPost & {
-  content: string;
 };

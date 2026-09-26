@@ -1,27 +1,28 @@
-import Image from "next/image";
-import { profile } from "@/constants/profile";
-import { Section } from "@/components/ui/Section";
-import { Icon } from "@/components/ui/Icon";
-import { Reveal } from "@/components/ui/Reveal";
-import { CopyEmail } from "@/components/ui/CopyEmail";
-import { CompactIconLink } from "@/components/ui/SocialLinks";
+import Image from 'next/image';
+import type { Profile } from '@/types';
+import type { Dictionary } from '@/i18n/types';
+import { Section } from '@/components/ui/Section';
+import { Icon } from '@/components/ui/Icon';
+import { Reveal } from '@/components/ui/Reveal';
+import { CopyEmail } from '@/components/ui/CopyEmail';
+import { CompactIconLink } from '@/components/ui/SocialLinks';
 
-const ACTION_ORDER = ["linkedin", "github"] as const;
+const ACTION_ORDER = ['linkedin', 'github'] as const;
 
-const actionIcons = ACTION_ORDER.flatMap((icon) =>
-  profile.social.filter((item) => item.href && item.icon === icon),
-);
-
-export function Contact() {
-  const email = profile.social.find((item) => item.icon === "email");
+export function Contact({
+  profile,
+  copy,
+  aria,
+}: {
+  profile: Profile;
+  copy: Dictionary['contact'];
+  aria: Dictionary['aria'];
+}) {
+  const email = profile.social.find((item) => item.icon === 'email');
+  const actionIcons = ACTION_ORDER.flatMap((icon) => profile.social.filter((item) => item.href && item.icon === icon));
 
   return (
-    <Section
-      id="contact"
-      eyebrow="05 · Contact"
-      title="Let's build something reliable together."
-      description="Open to senior backend roles, technical leadership and freelance engagements. Remote-friendly."
-    >
+    <Section id="contact" eyebrow={copy.eyebrow} title={copy.title} description={copy.description}>
       <Reveal direction="scale">
         <div className="relative overflow-hidden rounded-[24px] bg-ink text-white">
           <div
@@ -42,26 +43,21 @@ export function Contact() {
             </div>
 
             <div className="flex flex-col gap-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.06em] text-teal">
-                Best way to reach me
-              </p>
+              <p className="text-xs font-semibold uppercase tracking-[0.06em] text-teal">{copy.bestWay}</p>
 
-              {email ? <CopyEmail email={email.value} /> : null}
+              {email ? <CopyEmail email={email.value} labels={aria} /> : null}
 
-              <p className="max-w-md text-[15px] leading-relaxed text-white/70">
-                Happy to hear from you — drop me a line about a role, a project,
-                or just to say hi. Thanks for stopping by.
-              </p>
+              <p className="max-w-md text-[15px] leading-relaxed text-white/70">{copy.message}</p>
 
               <div className="flex flex-wrap items-center gap-2.5">
                 {actionIcons.map((item) => (
                   <CompactIconLink key={item.label} item={item} tone="dark" />
                 ))}
                 <a
-                  href={email?.href ?? "#"}
+                  href={email?.href}
                   className="inline-flex h-11 items-center gap-2 rounded-full bg-teal px-5 text-sm font-semibold text-white transition-all hover:bg-teal-deep hover:-translate-y-px hover:shadow-glow-teal"
                 >
-                  Send me an email
+                  {copy.sendEmail}
                   <Icon name="arrow" size={16} />
                 </a>
               </div>
