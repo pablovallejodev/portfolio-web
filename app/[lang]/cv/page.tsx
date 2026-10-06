@@ -13,6 +13,12 @@ import { copyCv } from '@/i18n/cv';
 import { getLocalizedExperiences, getLocalizedLanguages, getLocalizedProfile, getLocalizedSkills } from '@/i18n/data';
 import { isLocale, type Locale } from '@/i18n/config';
 
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  if (!isLocale(lang)) notFound();
+  return { robots: { index: false, follow: true } };
+}
+
 export default async function LocaleHomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();

@@ -1,0 +1,23 @@
+# Pablo Vallejo
+
+Pablo Vallejo is a Spanish Senior Backend Engineer with more than eight years of experience building backend systems, real-time Big Data pipelines, and high-performance services.
+
+## Speciality and technologies
+
+Backend engineering, architecture, observability, and production systems. Main technologies include Node.js, TypeScript, Big Data, Google Cloud Platform, Kubernetes, ClickHouse, BigQuery, and MariaDB.
+
+## Experience
+
+Experience includes founding and leading a mental-health AI platform, building real-time anomaly detection and data systems for telecommunications, renewable-energy software, and independent web projects.
+
+## Portfolio
+
+- Spanish: https://pablovallejo.dev/es
+- Catalan: https://pablovallejo.dev/ca
+- English: https://pablovallejo.dev/en
+
+## Contact and profiles
+
+- GitHub: https://github.com/pablovallejodev
+- LinkedIn: https://linkedin.com/in/pablovallejodev/
+- Email: mailto:pablo@pablovallejo.dev

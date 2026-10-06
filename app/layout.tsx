@@ -3,6 +3,8 @@ import { headers } from 'next/headers';
 import { Cormorant, Mulish, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/next';
+import { SITE } from '@/constants/routes/routes';
+import { SITE_AUTHOR, SITE_DESCRIPTION, SITE_NAME, SITE_SOCIAL_IMAGE } from '@/constants/seo/site';
 import { pickLocale } from '@/i18n/config';
 
 const cormorant = Cormorant({
@@ -23,25 +25,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Pablo Vallejo | Portfolio',
-  description:
-    'Ingeniero Backend Senior con más de 8 años de experiencia en Node.js, TypeScript y Big Data en tiempo real.',
-  metadataBase: new URL('https://pablovallejo.dev'),
+  title: `${SITE_NAME} | Portfolio`,
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [SITE_AUTHOR],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  metadataBase: new URL(SITE),
   icons: {
-    icon: '/favicon.ico',
+    icon: [{ url: '/icon.png', type: 'image/png', sizes: '1024x1024' }],
+    apple: '/icon.png',
   },
   openGraph: {
-    title: 'Pablo Vallejo | Portfolio',
-    description:
-      'Ingeniero Backend Senior con más de 8 años de experiencia en Node.js, TypeScript y Big Data en tiempo real.',
-    url: 'https://pablovallejo.dev',
+    title: `${SITE_NAME} | Portfolio`,
+    description: SITE_DESCRIPTION,
+    url: SITE,
+    siteName: SITE_NAME,
     type: 'website',
+    locale: 'es_ES',
+    images: [SITE_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pablo Vallejo | Portfolio',
-    description:
-      'Ingeniero Backend Senior con más de 8 años de experiencia en Node.js, TypeScript y Big Data en tiempo real.',
+    title: `${SITE_NAME} | Portfolio`,
+    description: SITE_DESCRIPTION,
+    images: [SITE_SOCIAL_IMAGE.url],
   },
 };
 
