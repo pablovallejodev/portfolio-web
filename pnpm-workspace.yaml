@@ -1,11 +1,2 @@
 allowBuilds:
-  sharp: true
   unrs-resolver: true
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver
-minimumReleaseAgeExclude:
-  - '@types/react-dom@19.2.5'
-overrides:
-  '@types/react': 19.2.18
-  '@types/react-dom': 19.2.5
