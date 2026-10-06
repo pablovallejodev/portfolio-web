@@ -9,6 +9,7 @@ import { Languages } from '@/components/sections/Languages';
 import { OpenSource } from '@/components/sections/OpenSource';
 import { Skills } from '@/components/sections/Skills';
 import { Terminal } from '@/components/sections/Terminal';
+import { ProfileJsonLd } from '@/components/seo/ProfileJsonLd';
 import { copyCv } from '@/i18n/cv';
 import { getLocalizedExperiences, getLocalizedLanguages, getLocalizedProfile, getLocalizedSkills } from '@/i18n/data';
 import { isLocale, type Locale } from '@/i18n/config';
@@ -22,6 +23,12 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
 
   return (
     <>
+      <ProfileJsonLd
+        locale={locale}
+        profile={localizedProfile}
+        title={copy.metadata.title}
+        description={copy.metadata.description}
+      />
       <Header
         lang={locale}
         navigation={copy.navigation}
