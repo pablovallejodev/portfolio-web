@@ -2,13 +2,10 @@ import type { Profile } from '@/types';
 import type { Dictionary } from '@/i18n/types';
 import type { Locale } from '@/i18n/config';
 import { projects } from '@/constants/projects';
-import { Icon } from '@/components/common/ui/Icon';
 import { ProjectCard } from '@/components/common/ui/ProjectCard';
 import { CompactIconLink } from '@/components/common/ui/SocialLinks';
 import { Reveal } from '@/components/common/ui/Reveal';
 import styles from '@/styles/hero/Background.module.css';
-
-const highlightIcons = ['stack', 'pulse', 'spark', 'passport'] as const;
 
 const ACTION_ORDER = ['linkedin', 'github'] as const;
 
@@ -80,40 +77,6 @@ export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; 
               </ul>
             </div>
           </section>
-        </div>
-      </div>
-
-      {/* Stats band — separated below the fold of hero copy */}
-      <div className="border-t border-border bg-surface/60">
-        <div className="mx-auto max-w-5xl px-6 py-8 md:px-10 md:py-10">
-          <dl className="grid grid-cols-2 justify-items-center gap-x-6 gap-y-8 text-center md:grid-cols-4 md:gap-y-0">
-            {profile.highlights.map((highlight, idx) => (
-              <Reveal
-                key={highlight.label}
-                delay={80 * idx}
-                direction="scale"
-                className="flex items-start justify-center gap-3 text-center"
-              >
-                <dt className="sr-only">{highlight.label}</dt>
-                <dd className="m-0 flex items-start justify-center gap-3 text-center">
-                  <span
-                    aria-hidden="true"
-                    className="inline-flex size-8 shrink-0 items-center justify-center rounded-full bg-teal/10 text-teal"
-                  >
-                    <Icon name={highlightIcons[idx] ?? 'stack'} size={15} />
-                  </span>
-                  <div className="text-center">
-                    <span className="font-serif text-2xl leading-none text-ink md:text-[1.75rem]">
-                      {highlight.value}
-                    </span>
-                    <span aria-hidden="true" className="mt-1.5 block text-[13px] leading-snug text-slate">
-                      {highlight.label}
-                    </span>
-                  </div>
-                </dd>
-              </Reveal>
-            ))}
-          </dl>
         </div>
       </div>
     </section>
