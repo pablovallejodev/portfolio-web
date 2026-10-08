@@ -13,8 +13,8 @@ export function Deepfriend({ lang, copy }: { lang: Locale; copy: Dictionary['dee
     >
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[0.9fr_1.1fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal className="order-1 md:order-2">
-          <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white p-2 shadow-[0_16px_48px_rgba(0,0,0,0.08)] sm:rounded-3xl sm:p-3">
-            <div className="relative aspect-[1200/630] overflow-hidden rounded-xl sm:rounded-2xl">
+          <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_16px_48px_rgba(0,0,0,0.08)] sm:rounded-3xl">
+            <div className="relative aspect-[1200/630] overflow-hidden">
               <Image
                 src={`/deepfriend/og-image${lang === 'es' ? '' : `-${lang}`}.png`}
                 alt={copy.imageAlt}

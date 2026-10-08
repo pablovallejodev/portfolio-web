@@ -8,8 +8,8 @@ export function Puente({ copy }: { copy: Dictionary['puente'] }) {
     <section id="puente" aria-labelledby="puente-title" className="scroll-mt-24 bg-white py-16 text-black md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal>
-          <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white p-2 shadow-lg shadow-black/10 sm:rounded-3xl sm:p-3">
-            <div className="relative aspect-[1440/640] overflow-hidden rounded-xl sm:rounded-2xl">
+          <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-lg shadow-black/10 sm:rounded-3xl">
+            <div className="relative aspect-[1440/640] overflow-hidden">
               <Image
                 src="/puente/puente-1440.webp"
                 alt={copy.imageAlt}
