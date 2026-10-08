@@ -49,7 +49,7 @@ export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; 
                   href={`/${lang}#contact`}
                   className="inline-flex h-12 items-center rounded-xl border border-border-strong bg-surface px-6 text-[15px] font-semibold text-ink transition-all hover:border-ink hover:bg-ice"
                 >
-                  {copy.viewExperience}
+                  {copy.getInTouch}
                 </a>
               </div>
             </div>

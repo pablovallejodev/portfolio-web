@@ -50,7 +50,6 @@ const es: Dictionary = {
       puente: { description: 'Traductor de voz en tiempo real, sin conexión y de código abierto.' },
     },
     getInTouch: 'Hablemos',
-    viewExperience: 'Ver más',
   },
   deepfriend: {
     title: 'Acompañamiento emocional, diseñado con cuidado.',
@@ -255,7 +254,6 @@ const ca: Dictionary = {
       puente: { description: 'Traductor de veu en temps real, sense connexió i de codi obert.' },
     },
     getInTouch: 'Parlem',
-    viewExperience: 'Veure més',
   },
   deepfriend: {
     title: 'Acompanyament emocional, dissenyat amb cura.',
@@ -466,7 +464,6 @@ const en: Dictionary = {
       puente: { description: 'Real-time voice translator that works offline and is open source.' },
     },
     getInTouch: 'Get in touch',
-    viewExperience: 'View more',
   },
   deepfriend: {
     title: 'Emotional support, thoughtfully designed.',

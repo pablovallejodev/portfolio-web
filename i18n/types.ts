@@ -32,7 +32,6 @@ export type Dictionary = {
     visitProject: string;
     projects: Record<ProjectId, { description: string }>;
     getInTouch: string;
-    viewExperience: string;
   };
   deepfriend: {
     title: string;
