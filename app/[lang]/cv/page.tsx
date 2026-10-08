@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { Header } from '@/components/common/Header';
+import { CvHeader } from '@/components/common/CvHeader';
 import { Footer } from '@/components/common/Footer';
 import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
@@ -30,7 +30,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
 
   return (
     <>
-      <Header
+      <CvHeader
         lang={locale}
         navigation={copy.navigation}
         primaryLabel={copy.header.primary}

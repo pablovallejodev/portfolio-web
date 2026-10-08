@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { Header } from '@/components/common/Header';
+import { HomeHeader } from '@/components/common/HomeHeader';
 import { Footer } from '@/components/common/Footer';
 import { Deepfriend } from '@/components/sections/Deepfriend';
 import { Hero } from '@/components/sections/Hero';
@@ -26,12 +26,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
         title={copy.metadata.title}
         description={copy.metadata.description}
       />
-      <Header
-        lang={locale}
-        navigation={copy.navigation}
-        primaryLabel={copy.header.primary}
-        getInTouch={copy.hero.getInTouch}
-      />
+      <HomeHeader lang={locale} />
       <main className="flex-1">
         <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
         <Deepfriend lang={locale} copy={copy.deepfriend} />
