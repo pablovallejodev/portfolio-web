@@ -36,7 +36,7 @@ export function Puente({ copy }: { copy: Dictionary['puente'] }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${copy.visit} ${copy.opensInNewTab}`}
-              className="inline-flex h-12 items-center gap-3 rounded-full border border-black/30 bg-white px-6 text-sm font-semibold text-black transition-colors hover:border-black hover:bg-neutral-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
+              className="inline-flex h-12 items-center gap-3 rounded-full bg-ink px-6 text-sm font-semibold text-white transition-all hover:-translate-y-px hover:bg-black hover:shadow-lg hover:shadow-black/15 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
             >
               {copy.visit}
               <Icon name="external" size={16} />
