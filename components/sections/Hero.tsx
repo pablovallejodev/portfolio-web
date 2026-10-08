@@ -64,18 +64,13 @@ export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; 
                 {copy.projectsLabel}
               </h2>
             </Reveal>
-            <div className="min-w-0 overflow-x-auto overscroll-x-contain pb-3">
-              <ul className="mx-auto mt-4 flex w-max min-w-full justify-center gap-6 px-1">
-                {projects.map((project, index) => (
-                  <Reveal as="li" key={project.id} delay={80 * index} className="w-60 shrink-0 sm:w-80">
-                    <ProjectCard
-                      project={project}
-                      copy={{ ...copy.projects[project.id], visitProject: copy.visitProject }}
-                    />
-                  </Reveal>
-                ))}
-              </ul>
-            </div>
+            <ul className="mx-auto mt-4 flex flex-wrap items-center justify-center gap-4 px-1">
+              {projects.map((project, index) => (
+                <Reveal as="li" key={project.id} delay={80 * index}>
+                  <ProjectCard project={project} lang={lang} />
+                </Reveal>
+              ))}
+            </ul>
           </section>
         </div>
       </div>

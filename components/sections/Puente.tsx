@@ -8,7 +8,7 @@ export function Puente({ copy }: { copy: Dictionary['puente'] }) {
     <section
       id="puente"
       aria-labelledby="puente-title"
-      className="border-b border-black/10 bg-white py-16 text-black md:py-24"
+      className="scroll-mt-24 border-b border-black/10 bg-white py-16 text-black md:py-24"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal>
