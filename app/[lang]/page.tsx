@@ -37,12 +37,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
       />
       <main className="flex-1">
         <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
-        <About profile={localizedProfile} copy={copy.about} />
-        <Experience experiences={getLocalizedExperiences(locale)} copy={copy.experience} />
-        <Skills skillGroups={getLocalizedSkills(locale)} copy={copy.skills} />
-        <Languages languages={getLocalizedLanguages(locale)} copy={copy.languages} />
         <Contact profile={localizedProfile} copy={copy.contact} aria={copy.aria} />
-        <Terminal copy={copy.terminal} />
         <OpenSource copy={copy.source} />
       </main>
       <Footer
