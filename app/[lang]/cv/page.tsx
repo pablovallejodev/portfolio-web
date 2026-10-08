@@ -5,12 +5,13 @@ import { Footer } from '@/components/common/Footer';
 import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
 import { Experience } from '@/components/sections/Experience';
-import { Hero } from '@/components/sections/Hero';
+import { CvHero } from '@/components/sections/CvHero';
 import { Languages } from '@/components/sections/Languages';
 import { OpenSource } from '@/components/sections/OpenSource';
 import { Skills } from '@/components/sections/Skills';
 import { Terminal } from '@/components/sections/Terminal';
 import { copyCv } from '@/i18n/cv';
+import { cvHeroCopy } from '@/i18n/cv/hero';
 import { getLocalizedExperiences, getLocalizedLanguages, getLocalizedProfile, getLocalizedSkills } from '@/i18n/data';
 import { isLocale, type Locale } from '@/i18n/config';
 
@@ -33,10 +34,10 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
         lang={locale}
         navigation={copy.navigation}
         primaryLabel={copy.header.primary}
-        getInTouch={copy.hero.getInTouch}
+        getInTouch={cvHeroCopy[locale].getInTouch}
       />
       <main className="flex-1">
-        <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
+        <CvHero lang={locale} profile={localizedProfile} copy={cvHeroCopy[locale]} />
         <About profile={localizedProfile} copy={copy.about} />
         <Experience experiences={getLocalizedExperiences(locale)} copy={copy.experience} />
         <Skills skillGroups={getLocalizedSkills(locale)} copy={copy.skills} />

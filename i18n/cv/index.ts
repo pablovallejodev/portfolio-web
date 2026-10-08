@@ -52,6 +52,24 @@ const es: Dictionary = {
     getInTouch: 'Hablemos',
     viewExperience: 'Ver más',
   },
+  deepfriend: {
+    title: 'Acompañamiento emocional, diseñado con cuidado.',
+    description:
+      'Deepfriend es una app de acompañamiento emocional con IA. Blue permite conversar por chat o voz, explorar contenidos y practicar mindfulness. La orientación del producto se describe como centrada en la terapia cognitivo-conductual (TCC).',
+    disclaimer: 'No sustituye la terapia ni la atención de profesionales de la salud.',
+    visit: 'Descubrir Deepfriend',
+    opensInNewTab: '(se abre en una pestaña nueva)',
+    imageAlt: 'Imagen oficial de Deepfriend con su identidad visual en tonos teal',
+  },
+  puente: {
+    title: 'Entenderse, incluso sin conexión.',
+    description:
+      'Puente es una app Android de traducción de voz en tiempo real. Utiliza IA y procesa la traducción en el propio teléfono. Tras descargar los modelos de idioma con conexión a internet, puede traducir sin conexión.',
+    status: 'Gratuita y de código abierto. Sigue en desarrollo y su publicación en Google Play está pendiente.',
+    visit: 'Descubrir Puente',
+    opensInNewTab: '(se abre en una pestaña nueva)',
+    imageAlt: 'Ilustración de un puente de piedra entre montañas y un río, inspirada en Asturias',
+  },
   about: {
     eyebrow: '01 · Sobre mí',
     title: 'Ingeniero Backend Senior centrado en escala, latencia y claridad.',
@@ -238,6 +256,24 @@ const ca: Dictionary = {
     },
     getInTouch: 'Parlem',
     viewExperience: 'Veure més',
+  },
+  deepfriend: {
+    title: 'Acompanyament emocional, dissenyat amb cura.',
+    description:
+      'Deepfriend és una app d’acompanyament emocional amb IA. Blue permet conversar per xat o veu, explorar continguts i practicar mindfulness. L’orientació del producte es descriu com a centrada en la teràpia cognitivoconductual (TCC).',
+    disclaimer: 'No substitueix la teràpia ni l’atenció de professionals de la salut.',
+    visit: 'Descobreix Deepfriend',
+    opensInNewTab: '(s’obre en una pestanya nova)',
+    imageAlt: 'Imatge oficial de Deepfriend amb la seva identitat visual en tons teal',
+  },
+  puente: {
+    title: 'Entendre’s, fins i tot sense connexió.',
+    description:
+      'Puente és una app Android de traducció de veu en temps real. Utilitza IA i processa la traducció al mateix telèfon. Després de descarregar els models d’idioma amb connexió a internet, pot traduir sense connexió.',
+    status: 'Gratuïta i de codi obert. Encara està en desenvolupament i la publicació a Google Play està pendent.',
+    visit: 'Descobreix Puente',
+    opensInNewTab: '(s’obre en una pestanya nova)',
+    imageAlt: 'Il·lustració d’un pont de pedra entre muntanyes i un riu, inspirada a Astúries',
   },
   about: {
     eyebrow: '01 · Sobre mi',
@@ -431,6 +467,24 @@ const en: Dictionary = {
     },
     getInTouch: 'Get in touch',
     viewExperience: 'View more',
+  },
+  deepfriend: {
+    title: 'Emotional support, thoughtfully designed.',
+    description:
+      'Deepfriend is an AI-powered emotional support app. Blue lets people talk by chat or voice, explore content, and practise mindfulness. The product describes its guidance as grounded in cognitive behavioral therapy (CBT).',
+    disclaimer: 'It does not replace therapy or care from health professionals.',
+    visit: 'Discover Deepfriend',
+    opensInNewTab: '(opens in a new tab)',
+    imageAlt: 'Official Deepfriend artwork in its teal visual identity',
+  },
+  puente: {
+    title: 'Understand each other, even offline.',
+    description:
+      'Puente is an Android app for real-time voice translation. It uses AI and processes translations on the phone itself. After downloading language models over an internet connection, it can translate offline.',
+    status: 'Free and open source. It is still in development, and its Google Play release is pending.',
+    visit: 'Discover Puente',
+    opensInNewTab: '(opens in a new tab)',
+    imageAlt: 'Illustration of a stone bridge between mountains and a river, inspired by Asturias',
   },
   about: {
     eyebrow: '01 · About',
