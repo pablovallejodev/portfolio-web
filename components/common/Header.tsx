@@ -1,20 +1,18 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { NavItem, Profile } from '@/types';
+import type { NavItem } from '@/types';
 import type { Locale } from '@/i18n/config';
-import type { Dictionary } from '@/i18n/types';
-import { LangSwitcher } from '@/components/common/lang-switcher';
 import { useActiveSection } from '@/hooks/useActiveSection';
 
 type HeaderProps = {
   lang: Locale;
   navigation: NavItem[];
-  profile: Profile;
-  copy: Pick<Dictionary, 'header' | 'hero' | 'aria'>;
+  primaryLabel: string;
+  getInTouch: string;
 };
 
-export function Header({ lang, navigation, profile, copy }: HeaderProps) {
+export function Header({ lang, navigation, primaryLabel, getInTouch }: HeaderProps) {
   const ids = useMemo(() => navigation.map((item) => item.id), [navigation]);
   const activeId = useActiveSection(ids);
   const [scrolled, setScrolled] = useState(false);
@@ -43,15 +41,9 @@ export function Header({ lang, navigation, profile, copy }: HeaderProps) {
               className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"
             />
           </span>
-          <span className="hidden flex-col leading-tight sm:flex">
-            <span className="font-serif text-sm text-text-strong">{profile.name}</span>
-            <span className="font-mono text-[10px] uppercase tracking-wider text-text-muted">
-              {profile.shortHeadline}
-            </span>
-          </span>
         </a>
 
-        <nav aria-label={copy.header.primary}>
+        <nav aria-label={primaryLabel}>
           <ul className="hidden items-center gap-1 md:flex">
             {navigation.map((item) => {
               const isActive = item.id === activeId;
@@ -59,6 +51,7 @@ export function Header({ lang, navigation, profile, copy }: HeaderProps) {
                 <li key={item.id}>
                   <a
                     href={`/${lang}#${item.id}`}
+                    aria-current={isActive ? 'location' : undefined}
                     className={`relative inline-flex items-center px-3 py-2 text-sm transition-colors ${
                       isActive ? 'text-teal' : 'text-text-muted hover:text-text-strong'
                     }`}
@@ -81,9 +74,8 @@ export function Header({ lang, navigation, profile, copy }: HeaderProps) {
           href={`/${lang}#contact`}
           className="inline-flex items-center gap-1.5 rounded-full bg-teal-deep px-4 py-2 text-sm font-semibold text-white shadow-soft transition-all hover:bg-teal-deep hover:-translate-y-px hover:shadow-glow-teal"
         >
-          {copy.hero.getInTouch}
+          {getInTouch}
         </a>
-        <LangSwitcher current={lang} labels={copy.aria} />
       </div>
     </header>
   );

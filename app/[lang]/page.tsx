@@ -32,8 +32,8 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
       <Header
         lang={locale}
         navigation={copy.navigation}
-        profile={localizedProfile}
-        copy={{ header: copy.header, hero: copy.hero, aria: copy.aria }}
+        primaryLabel={copy.header.primary}
+        getInTouch={copy.hero.getInTouch}
       />
       <main className="flex-1">
         <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
