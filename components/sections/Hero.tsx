@@ -12,7 +12,7 @@ const ACTION_ORDER = ['linkedin', 'github'] as const;
 export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; copy: Dictionary['hero'] }) {
   const heroSocial = ACTION_ORDER.flatMap((icon) => profile.social.filter((item) => item.href && item.icon === icon));
   return (
-    <section id="top" className="relative isolate overflow-hidden border-b border-border bg-background">
+    <section id="top" className="relative isolate overflow-hidden bg-background">
       <div aria-hidden className={`pointer-events-none absolute inset-0 -z-10 ${styles.backdrop}`}>
         <div className={styles.rotor}>
           <span className={styles.glowOne} />

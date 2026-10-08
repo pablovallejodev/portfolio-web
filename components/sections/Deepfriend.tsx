@@ -9,7 +9,7 @@ export function Deepfriend({ lang, copy }: { lang: Locale; copy: Dictionary['dee
     <section
       id="deepfriend"
       aria-labelledby="deepfriend-title"
-      className="relative scroll-mt-24 overflow-hidden border-y border-border bg-white py-16 text-text-strong md:py-24"
+      className="relative scroll-mt-24 overflow-hidden bg-white py-16 text-text-strong md:py-24"
     >
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[0.9fr_1.1fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal className="order-1 md:order-2">

@@ -5,11 +5,7 @@ import { Reveal } from '@/components/common/ui/Reveal';
 
 export function Puente({ copy }: { copy: Dictionary['puente'] }) {
   return (
-    <section
-      id="puente"
-      aria-labelledby="puente-title"
-      className="scroll-mt-24 border-b border-black/10 bg-white py-16 text-black md:py-24"
-    >
+    <section id="puente" aria-labelledby="puente-title" className="scroll-mt-24 bg-white py-16 text-black md:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal>
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white p-2 shadow-lg shadow-black/10 sm:rounded-3xl sm:p-3">
