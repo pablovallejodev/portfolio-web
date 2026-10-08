@@ -36,7 +36,7 @@ export function LangSwitcher({ current, labels }: LangSwitcherProps) {
     const tail = isLocale(segments[0]) ? segments.slice(1) : segments;
     const suffix = tail.length ? `/${tail.join('/')}` : '';
     setLocaleCookie(locale);
-    document.documentElement.lang = locale;
+    //TODO document.documentElement.lang = locale;
     setOpen(false);
     router.push(`/${locale}${suffix}${window.location.search}${window.location.hash}`);
   }
