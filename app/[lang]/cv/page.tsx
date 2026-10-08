@@ -46,13 +46,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
         <Terminal copy={copy.terminal} />
         <OpenSource copy={copy.source} />
       </main>
-      <Footer
-        lang={locale}
-        navigation={copy.navigation}
-        profile={localizedProfile}
-        copy={copy.footer}
-        aria={copy.aria}
-      />
+      <Footer lang={locale} profile={localizedProfile} copy={copy.footer} aria={copy.aria} />
     </>
   );
 }

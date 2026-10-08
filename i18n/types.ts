@@ -98,7 +98,7 @@ export type Dictionary = {
   };
   header: { primary: string };
   footer: {
-    navigate: string;
+    tagline: string;
     contact: string;
     openSourceGithub: string;
     allRightsReserved: string;

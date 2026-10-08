@@ -189,7 +189,7 @@ const es: Dictionary = {
   },
   header: { primary: 'Principal' },
   footer: {
-    navigate: 'Navegar',
+    tagline: 'Tu desarrollador de confianza',
     contact: 'Contacto',
     openSourceGithub: 'Código abierto · GitHub',
     allRightsReserved: 'Todos los derechos reservados.',
@@ -400,7 +400,7 @@ const ca: Dictionary = {
   },
   header: { primary: 'Principal' },
   footer: {
-    navigate: 'Navegar',
+    tagline: 'El teu desenvolupador de confiança',
     contact: 'Contacte',
     openSourceGithub: 'Codi obert · GitHub',
     allRightsReserved: 'Tots els drets reservats.',
@@ -607,7 +607,7 @@ const en: Dictionary = {
   },
   header: { primary: 'Primary' },
   footer: {
-    navigate: 'Navigate',
+    tagline: 'Your trusted developer',
     contact: 'Contact',
     openSourceGithub: 'Open source · GitHub',
     allRightsReserved: 'All rights reserved.',
