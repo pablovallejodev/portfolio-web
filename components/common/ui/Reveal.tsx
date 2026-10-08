@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
-import type { CSSProperties, ElementType, ReactNode } from "react";
+import { useEffect, useRef, useState } from 'react';
+import type { CSSProperties, ElementType, ReactNode } from 'react';
 
-type RevealDirection = "up" | "left" | "right" | "scale";
-type RevealAs = "div" | "li";
+type RevealDirection = 'up' | 'left' | 'right' | 'scale';
+type RevealAs = 'div' | 'li';
 
 type RevealProps = {
   as?: RevealAs;
@@ -17,10 +17,10 @@ type RevealProps = {
 };
 
 export function Reveal({
-  as = "div",
+  as = 'div',
   children,
   delay = 0,
-  direction = "up",
+  direction = 'up',
   className,
   style,
   threshold = 0.12,
@@ -33,10 +33,13 @@ export function Reveal({
     const node = ref.current;
     if (!node) return;
 
+    /*
+    TODO 
     if (typeof IntersectionObserver === "undefined") {
       setVisible(true);
       return;
     }
+    */
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -47,7 +50,7 @@ export function Reveal({
           }
         });
       },
-      { rootMargin: "0px 0px -8% 0px", threshold }
+      { rootMargin: '0px 0px -8% 0px', threshold },
     );
 
     observer.observe(node);
@@ -57,8 +60,8 @@ export function Reveal({
   return (
     <Component
       ref={ref}
-      className={`reveal ${className ?? ""}`}
-      data-reveal={visible ? "visible" : "hidden"}
+      className={`reveal ${className ?? ''}`}
+      data-reveal={visible ? 'visible' : 'hidden'}
       data-reveal-direction={direction}
       style={{ transitionDelay: `${delay}ms`, ...style }}
     >
