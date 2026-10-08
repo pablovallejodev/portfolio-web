@@ -34,6 +34,22 @@ export type Dictionary = {
     getInTouch: string;
     viewExperience: string;
   };
+  deepfriend: {
+    title: string;
+    description: string;
+    disclaimer: string;
+    visit: string;
+    opensInNewTab: string;
+    imageAlt: string;
+  };
+  puente: {
+    title: string;
+    description: string;
+    status: string;
+    visit: string;
+    opensInNewTab: string;
+    imageAlt: string;
+  };
   about: {
     eyebrow: string;
     title: string;

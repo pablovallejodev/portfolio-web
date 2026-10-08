@@ -1,17 +1,14 @@
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/common/Footer';
-import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
-import { Experience } from '@/components/sections/Experience';
+import { Deepfriend } from '@/components/sections/Deepfriend';
 import { Hero } from '@/components/sections/Hero';
-import { Languages } from '@/components/sections/Languages';
 import { OpenSource } from '@/components/sections/OpenSource';
-import { Skills } from '@/components/sections/Skills';
-import { Terminal } from '@/components/sections/Terminal';
+import { Puente } from '@/components/sections/Puente';
 import { ProfileJsonLd } from '@/components/seo/ProfileJsonLd';
 import { copyCv } from '@/i18n/cv';
-import { getLocalizedExperiences, getLocalizedLanguages, getLocalizedProfile, getLocalizedSkills } from '@/i18n/data';
+import { getLocalizedProfile } from '@/i18n/data';
 import { isLocale, type Locale } from '@/i18n/config';
 
 export default async function LocaleHomePage({ params }: { params: Promise<{ lang: string }> }) {
@@ -37,6 +34,8 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
       />
       <main className="flex-1">
         <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
+        <Deepfriend lang={locale} copy={copy.deepfriend} />
+        <Puente copy={copy.puente} />
         <Contact profile={localizedProfile} copy={copy.contact} aria={copy.aria} />
         <OpenSource copy={copy.source} />
       </main>
