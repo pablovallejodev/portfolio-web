@@ -1,0 +1,61 @@
+.backdrop {
+  background: linear-gradient(180deg, #f5fbfa 0%, #ffffff 68%);
+}
+
+.rotor {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: clamp(640px, 100vw, 960px);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  animation: orbit 40s linear infinite;
+}
+
+.glowOne,
+.glowTwo {
+  position: absolute;
+  display: block;
+  width: clamp(240px, 42vw, 440px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform: scale(1.6);
+}
+
+.glowOne {
+  top: 11%;
+  left: 10%;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(36, 153, 139, 0.54) 0%,
+    rgba(36, 153, 139, 0.39) 28%,
+    rgba(36, 153, 139, 0.18) 64%,
+    rgba(36, 153, 139, 0.05) 80%,
+    transparent 100%
+  );
+}
+
+.glowTwo {
+  top: 51%;
+  right: 6%;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(36, 153, 139, 0.47) 0%,
+    rgba(36, 153, 139, 0.33) 28%,
+    rgba(36, 153, 139, 0.14) 64%,
+    rgba(36, 153, 139, 0.04) 80%,
+    transparent 100%
+  );
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotor {
+    animation: none;
+  }
+}

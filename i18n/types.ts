@@ -1,4 +1,5 @@
 import type { SocialIcon } from '@/types';
+import type { ProjectId } from '@/constants/projects';
 
 export type ExperienceTranslation = {
   role: string;
@@ -25,10 +26,11 @@ export type Dictionary = {
     socialValues: Partial<Record<SocialIcon, string>>;
   };
   hero: {
-    titleBefore: string;
-    titleAccent: string;
-    titleAfter: string;
-    introSuffix: string;
+    title: string;
+    subtitle: string;
+    projectsLabel: string;
+    visitProject: string;
+    projects: Record<ProjectId, { description: string }>;
     getInTouch: string;
     viewExperience: string;
   };
