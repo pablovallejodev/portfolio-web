@@ -1,10 +1,10 @@
 import { notFound } from 'next/navigation';
 import { Header } from '@/components/common/Header';
 import { Footer } from '@/components/common/Footer';
-import { Contact } from '@/components/sections/Contact';
 import { Deepfriend } from '@/components/sections/Deepfriend';
 import { Hero } from '@/components/sections/Hero';
-import { OpenSource } from '@/components/sections/OpenSource';
+import { HomeContact } from '@/components/sections/HomeContact';
+import { HomeOpenSource } from '@/components/sections/HomeOpenSource';
 import { Puente } from '@/components/sections/Puente';
 import { ProfileJsonLd } from '@/components/seo/ProfileJsonLd';
 import { copyCv } from '@/i18n/cv';
@@ -36,8 +36,8 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ lan
         <Hero lang={locale} profile={localizedProfile} copy={copy.hero} />
         <Deepfriend lang={locale} copy={copy.deepfriend} />
         <Puente copy={copy.puente} />
-        <Contact profile={localizedProfile} copy={copy.contact} aria={copy.aria} />
-        <OpenSource copy={copy.source} />
+        <HomeContact profile={localizedProfile} copy={copy.contact} aria={copy.aria} />
+        <HomeOpenSource copy={copy.source} />
       </main>
       <Footer
         lang={locale}
