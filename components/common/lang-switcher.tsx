@@ -45,7 +45,7 @@ export function LangSwitcher({ current, labels }: LangSwitcherProps) {
     <div ref={rootRef} className="relative">
       <button
         type="button"
-        className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-2 text-xs font-semibold text-text-muted transition-colors hover:border-teal/40 hover:text-text-strong"
+        className="inline-flex items-center gap-1.5 rounded-full border border-white/30 px-3 py-2 text-xs font-semibold text-white transition-colors hover:border-white/60 hover:text-white"
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={labels.language}
@@ -58,7 +58,7 @@ export function LangSwitcher({ current, labels }: LangSwitcherProps) {
       </button>
       {open ? (
         <ul
-          className="absolute right-0 top-full z-50 mt-2 min-w-32 rounded-xl border border-border bg-surface p-1.5 shadow-soft"
+          className="absolute right-0 bottom-full z-50 mb-2 min-w-32 rounded-xl border border-border bg-surface p-1.5 shadow-soft"
           role="listbox"
           aria-label={labels.languages}
         >
