@@ -63,8 +63,9 @@ const es: Dictionary = {
   puente: {
     title: 'Entenderse, incluso sin conexión.',
     description:
-      'Puente es una app Android de traducción de voz en tiempo real. Utiliza IA y procesa la traducción en el propio teléfono. Tras descargar los modelos de idioma con conexión a internet, puede traducir sin conexión.',
-    status: 'Gratuita y de código abierto. Sigue en desarrollo y su publicación en Google Play está pendiente.',
+      'Puente es una app de traducción universal para Android. Utiliza modelos de IA que se ejecutan de forma local y privada: todo se procesa en el teléfono y ningún dato ni conversación sale del dispositivo. Descarga la app, instala el modelo que prefieras y úsala sin conexión a internet.',
+    status:
+      'Es gratuita y de código abierto; te invitamos a contribuir. Su publicación en Google Play está pendiente de aprobación.',
     visit: 'Descubrir Puente',
     opensInNewTab: '(se abre en una pestaña nueva)',
     imageAlt: 'Ilustración de un puente de piedra entre montañas y un río, inspirada en Asturias',
@@ -265,8 +266,9 @@ const ca: Dictionary = {
   puente: {
     title: 'Entendre’s, fins i tot sense connexió.',
     description:
-      'Puente és una app Android de traducció de veu en temps real. Utilitza IA i processa la traducció al mateix telèfon. Després de descarregar els models d’idioma amb connexió a internet, pot traduir sense connexió.',
-    status: 'Gratuïta i de codi obert. Encara està en desenvolupament i la publicació a Google Play està pendent.',
+      'Puente és una app de traducció universal per a Android. Utilitza models d’IA que s’executen de manera local i privada: tot es processa al telèfon i cap dada ni conversa no surt del dispositiu. Descarrega l’app, instal·la el model que prefereixis i fes-la servir sense connexió a internet.',
+    status:
+      'És gratuïta i de codi obert; t’animem a contribuir-hi. La publicació a Google Play està pendent d’aprovació.',
     visit: 'Descobreix Puente',
     opensInNewTab: '(s’obre en una pestanya nova)',
     imageAlt: 'Il·lustració d’un pont de pedra entre muntanyes i un riu, inspirada a Astúries',
@@ -473,8 +475,8 @@ const en: Dictionary = {
   puente: {
     title: 'Understand each other, even offline.',
     description:
-      'Puente is an Android app for real-time voice translation. It uses AI and processes translations on the phone itself. After downloading language models over an internet connection, it can translate offline.',
-    status: 'Free and open source. It is still in development, and its Google Play release is pending.',
+      'Puente is a universal translation app for Android. It uses AI models that run locally and privately: everything is processed on the phone, and no data or conversations leave the device. Download the app, install your preferred model, and use it without an internet connection.',
+    status: 'It’s free and open source, and you’re welcome to contribute. Its Google Play release is pending approval.',
     visit: 'Discover Puente',
     opensInNewTab: '(opens in a new tab)',
     imageAlt: 'Illustration of a stone bridge between mountains and a river, inspired by Asturias',
