@@ -54,7 +54,7 @@ const es: Dictionary = {
   deepfriend: {
     title: 'Acompañamiento emocional, diseñado con cuidado.',
     description:
-      'Deepfriend es una app de acompañamiento emocional con IA. Blue permite conversar por chat o voz, explorar contenidos y practicar mindfulness. La orientación del producto se describe como centrada en la terapia cognitivo-conductual (TCC).',
+      'Deepfriend es una app de salud mental con IA que ofrece acompañamiento emocional basado en la terapia cognitivo-conductual (TCC). Blue, su IA, te permite conversar de forma privada y segura por chat o por voz. Toda la experiencia está estrictamente centrada en la TCC.',
     disclaimer: 'No sustituye la terapia ni la atención de profesionales de la salud.',
     visit: 'Descubrir Deepfriend',
     opensInNewTab: '(se abre en una pestaña nueva)',
@@ -256,7 +256,7 @@ const ca: Dictionary = {
   deepfriend: {
     title: 'Acompanyament emocional, dissenyat amb cura.',
     description:
-      'Deepfriend és una app d’acompanyament emocional amb IA. Blue permet conversar per xat o veu, explorar continguts i practicar mindfulness. L’orientació del producte es descriu com a centrada en la teràpia cognitivoconductual (TCC).',
+      'Deepfriend és una aplicació de salut mental amb IA que ofereix acompanyament emocional basat en la teràpia cognitivoconductual (TCC). Blue, la seva IA, et permet conversar de manera privada i segura per xat o per veu. Tota l’experiència està estrictament centrada en la TCC.',
     disclaimer: 'No substitueix la teràpia ni l’atenció de professionals de la salut.',
     visit: 'Descobreix Deepfriend',
     opensInNewTab: '(s’obre en una pestanya nova)',
@@ -464,7 +464,7 @@ const en: Dictionary = {
   deepfriend: {
     title: 'Emotional support, thoughtfully designed.',
     description:
-      'Deepfriend is an AI-powered emotional support app. Blue lets people talk by chat or voice, explore content, and practise mindfulness. The product describes its guidance as grounded in cognitive behavioral therapy (CBT).',
+      'Deepfriend is an AI-powered mental health app offering emotional support based on cognitive behavioral therapy (CBT). Blue, its AI, lets you communicate privately and securely via chat or voice. The entire experience is strictly focused on CBT.',
     disclaimer: 'It does not replace therapy or care from health professionals.',
     visit: 'Discover Deepfriend',
     opensInNewTab: '(opens in a new tab)',
