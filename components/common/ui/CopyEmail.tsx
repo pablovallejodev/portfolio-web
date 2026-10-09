@@ -28,12 +28,12 @@ export function CopyEmail({ email, labels }: CopyEmailProps) {
       type="button"
       onClick={handleCopy}
       aria-label={copied ? labels.emailCopied : labels.copyEmail}
-      className="group/email inline-flex cursor-pointer items-center gap-3 text-left transition-opacity hover:opacity-90"
+      className="group/email inline-flex min-w-0 max-w-full cursor-pointer items-center gap-3 text-left transition-opacity hover:opacity-90"
     >
       <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-teal/20 text-teal transition-colors group-hover/email:bg-teal/30">
         <Icon name="email" size={18} />
       </span>
-      <span className="text-lg font-semibold text-white md:text-xl" aria-live="polite">
+      <span className="min-w-0 [overflow-wrap:anywhere] text-lg font-semibold text-white md:text-xl" aria-live="polite">
         {copied ? labels.copied : email}
       </span>
     </button>

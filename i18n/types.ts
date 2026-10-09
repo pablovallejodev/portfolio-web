@@ -76,7 +76,6 @@ export type Dictionary = {
   contact: {
     eyebrow: string;
     title: string;
-    description: string;
     bestWay: string;
     message: string;
     sendEmail: string;

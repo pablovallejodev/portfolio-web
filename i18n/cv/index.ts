@@ -162,12 +162,10 @@ const es: Dictionary = {
   },
   contact: {
     eyebrow: '05 · Contacto',
-    title: 'Construyamos algo fiable juntos.',
-    description:
-      'Disponible para puestos backend senior, liderazgo técnico y colaboraciones freelance. Trabajo remoto sin problema.',
+    title: 'Ponte en contacto conmigo',
     bestWay: 'La mejor forma de contactarme',
     message:
-      'Estaré encantado de leerte: escríbeme sobre un puesto, un proyecto o simplemente para saludar. Gracias por pasarte.',
+      'Estaré encantado de leerte si quieres hablar de una oportunidad laboral, colaborar en uno de mis proyectos, proponerme uno nuevo o simplemente saludar. Gracias por pasarte.',
     sendEmail: 'Envíame un correo',
   },
   terminal: {
@@ -373,12 +371,10 @@ const ca: Dictionary = {
   },
   contact: {
     eyebrow: '05 · Contacte',
-    title: 'Construïm alguna cosa fiable plegats.',
-    description:
-      'Disponible per a llocs backend sènior, lideratge tècnic i col·laboracions freelance. Treball remot sense problema.',
+    title: 'Posa’t en contacte amb mi',
     bestWay: 'La millor manera de contactar-me',
     message:
-      'Estaré encantat de llegir-te: escriu-me sobre un lloc, un projecte o simplement per saludar. Gràcies per passar-te.',
+      'M’encantarà llegir-te si vols parlar d’una oportunitat laboral, col·laborar en un dels meus projectes, proposar-me’n un de nou o simplement saludar. Gràcies per passar-te.',
     sendEmail: 'Envia’m un correu',
   },
   terminal: {
@@ -581,11 +577,10 @@ const en: Dictionary = {
   },
   contact: {
     eyebrow: '05 · Contact',
-    title: 'Let’s build something reliable together.',
-    description: 'Open to senior backend roles, technical leadership and freelance engagements. Remote-friendly.',
+    title: 'Get in touch',
     bestWay: 'Best way to reach me',
     message:
-      'Happy to hear from you — drop me a line about a role, a project, or just to say hi. Thanks for stopping by.',
+      'I’d be happy to hear from you if you’d like to talk about a job opportunity, collaborate on one of my projects, suggest a new one, or simply say hello. Thanks for stopping by.',
     sendEmail: 'Send me an email',
   },
   terminal: {

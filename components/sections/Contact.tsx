@@ -22,7 +22,7 @@ export function Contact({
   const actionIcons = ACTION_ORDER.flatMap((icon) => profile.social.filter((item) => item.href && item.icon === icon));
 
   return (
-    <Section id="contact" eyebrow={copy.eyebrow} title={copy.title} description={copy.description}>
+    <Section id="contact" eyebrow={copy.eyebrow} title={copy.title}>
       <Reveal direction="scale">
         <div className="relative overflow-hidden rounded-[24px] bg-ink text-white">
           <div
@@ -33,7 +33,7 @@ export function Contact({
           <div className="relative grid gap-8 p-6 md:grid-cols-[auto_1fr] md:items-center md:gap-12 md:p-10 lg:p-14">
             <div className="mx-auto size-40 shrink-0 overflow-hidden rounded-full md:mx-0 md:size-52 lg:size-60">
               <Image
-                src="/pablo-dibujo.png"
+                src="/pablo.png"
                 alt="Pablo Vallejo"
                 width={240}
                 height={240}
