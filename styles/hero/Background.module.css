@@ -4,7 +4,8 @@
 
 .rotor {
   position: absolute;
-  top: 28%;
+  /* Keep the glow aligned after the hero extends behind the 69px header. */
+  top: calc(28% + 50px);
   left: 50%;
   width: clamp(640px, 100vw, 960px);
   aspect-ratio: 1;

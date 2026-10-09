@@ -12,7 +12,7 @@ const ACTION_ORDER = ['linkedin', 'github'] as const;
 export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; copy: Dictionary['hero'] }) {
   const heroSocial = ACTION_ORDER.flatMap((icon) => profile.social.filter((item) => item.href && item.icon === icon));
   return (
-    <section id="top" className="relative isolate overflow-hidden bg-background">
+    <section id="top" className="relative isolate -mt-[69px] overflow-hidden bg-background">
       <div aria-hidden className={`pointer-events-none absolute inset-0 -z-10 ${styles.backdrop}`}>
         <div className={styles.rotor}>
           <span className={styles.glowOne} />
@@ -20,8 +20,7 @@ export function Hero({ lang, profile, copy }: { lang: Locale; profile: Profile; 
         </div>
       </div>
 
-      {/* Main hero copy and calls to action */}
-      <div className="mx-auto max-w-5xl px-6 pb-16 pt-20 md:px-10 md:pb-48 md:pt-28">
+      <div className="mx-auto max-w-5xl px-6 pb-16 pt-[calc(5rem_+_69px)] md:px-10 md:pb-48 md:pt-[calc(7rem_+_69px)]">
         <div className="text-center">
           <Reveal>
             <h1 className="mx-auto max-w-3xl font-serif text-[clamp(2.5rem,7vw,4.75rem)] leading-[1.06] tracking-[-0.02em] text-ink">
