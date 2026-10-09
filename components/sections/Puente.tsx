@@ -9,13 +9,13 @@ export function Puente({ copy }: { copy: Dictionary['puente'] }) {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 md:grid-cols-[1.1fr_0.9fr] md:gap-12 md:px-10 lg:gap-16">
         <Reveal>
           <div className="relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-lg shadow-black/10 sm:rounded-3xl">
-            <div className="relative aspect-[1440/640] overflow-hidden">
+            <div className="relative aspect-video overflow-hidden">
               <Image
                 src="/puente/puente-1440.webp"
                 alt={copy.imageAlt}
                 width={1440}
                 height={640}
-                sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1280px) 55vw, 640px"
+                sizes="(max-width: 767px) calc(100vw - 48px), (max-width: 1023px) calc(55vw - 70px), (max-width: 1152px) calc(55vw - 79px), 554px"
                 className="size-full object-cover"
               />
             </div>
